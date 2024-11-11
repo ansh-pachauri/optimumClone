@@ -1,3 +1,4 @@
+import LetsConnect from "./pages/LetsConnect"
 
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
 
   return (
     <div>
-      
+      <LetsConnect/>
     </div>
   )
 }

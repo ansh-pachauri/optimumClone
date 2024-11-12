@@ -2,32 +2,36 @@ import React from "react";
 import { assets } from "../assets/assets";
 import { useForm } from "react-hook-form";
 
-const Input = ({ label, register, required ,type,pattern}) => (
+const Input = ({ label, register, required ,type,pattern,placeholder}) => (
   <>
     <label className="block text-blue-800 font-medium mt-3">{label}</label>
     <input {...register(label, { required })}
     type={type}
     pattern={pattern}
-    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
+    placeholder={placeholder}
+    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
       />
   </>
 );
 
-// you can use React.forwardRef to pass the ref too
-const Select = React.forwardRef(({ onChange, onBlur, name, label }, ref) => (
-  <>
-    <label  className="block text-gray-700 font-medium mb-2">{label}</label>
-    <select name={name} ref={ref} onChange={onChange} onBlur={onBlur}
-    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-      <option value="Online Search">Online Search</option>
-      <option value="Instagram">Instagram/Facebook</option>
-      <option value="Linkedln">Linkedln</option>
-      <option value="Tv">Tv</option>
-      <option value="Email">Email</option>
-      <option value="Other">Other</option>
-    </select>
-  </>
-));
+const Select = React.forwardRef(({ label, register }, ref) => (
+    <div className="mb-4">
+      <label className="block text-blue-800 font-medium mb-1">{label}</label>
+      <select
+        {...register("How Did You Hear About Us?")}
+        ref={ref}
+        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+      >
+        <option value="Online Search">Online Search</option>
+        <option value="Instagram/Facebook">Instagram/Facebook</option>
+        <option value="LinkedIn">LinkedIn</option>
+        <option value="TV">TV</option>
+        <option value="Email">Email</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+  ));
+
 
 const Contact = () => {
   const { register, handleSubmit,formState: {errors} } = useForm();
@@ -39,19 +43,27 @@ const Contact = () => {
   return (
     <>
       <div className="flex justify-around p-8 bg-gray-50">
-        <div>
+        <div className="mb-8">
           <img src={assets.letsimage2} className="w-full max-w-xl rounded-lg" />
         </div>
+        {/* rightside form */}
         <div className="w-full max-w-xl bg-white p-8 rounded-lg shadow-md">
           <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="flex justify-between gap-3">
 
+          {/* first name and last name */}
+          <div className="flex flex-row justify-between gap-3">
+
+          <div className="w-full">
           <Input label="First Name" register={register} required={{ value: true, message: "First Name is required" }} type="text"
             />
+          </div>
 
-            <Input label="Last Name" register={register} required={{ value: true, message: "Last Name is required" }} 
+          <div className="w-full">
+          <Input label="Last Name" register={register} required={{ value: true, message: "Last Name is required" }} 
                 type='text'
             />
+          </div>
+            
           </div>
             
 
@@ -71,7 +83,7 @@ const Contact = () => {
             type="text" />
 
             <Input label="State" register={register} required={{ value: true, message: "State is required" }}
-            type="text" />
+            type="text" placeholder="(eg. New York)" />
 
             <Input label="How Can We Help?"
               register={register}
@@ -79,7 +91,7 @@ const Contact = () => {
               type="text" 
             />
 
-            <Select label="How Did You Hear About Us?" {...register("hear")} /> 
+            <Select label="How Did You Hear About Us?" register={register} /> 
 
             <input type="submit" 
              className="mt-4 w-full bg-blue-500 text-white font-bold py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" />

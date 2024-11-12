@@ -1,3 +1,5 @@
+import { dark } from '@mui/material/styles/createPalette';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -6,6 +8,7 @@ export default {
   ],
   theme: {
     extend: {},
+    
   },
   plugins: [],
 }

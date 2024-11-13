@@ -42,12 +42,12 @@ const Contact = () => {
 
   return (
     <>
-      <div className="flex justify-around p-8 bg-gray-50">
+      <div className="flex justify-around p-8 bg-white">
         <div className="mb-8">
-          <img src={assets.letsimage2} className="w-full max-w-xl rounded-lg" />
+          <img src={assets.letsimage2} className="w-full max-w-2xl rounded-lg" />
         </div>
         {/* rightside form */}
-        <div className="w-full max-w-xl bg-white p-8 rounded-lg shadow-md">
+        <div className="w-full max-w-2xl bg-white p-8 rounded-lg ">
           <form onSubmit={handleSubmit(onSubmit)}>
 
           {/* first name and last name */}
@@ -92,6 +92,8 @@ const Contact = () => {
             />
 
             <Select label="How Did You Hear About Us?" register={register} /> 
+
+            <p className=" font-bold text-[#678FF5] mt-6 text-[12px]">We do not intend to collect or process personal information. Nevertheless, if you provide such information to us, you affirmatively consent to us collecting and processing it. </p>
 
             <input type="submit" 
              className="mt-4 w-full bg-blue-500 text-white font-bold py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" />

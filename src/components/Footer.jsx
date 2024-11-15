@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <div className="bg-[#002865] w-full text-white flex flex-col sm:flex-row items-start justify-between sm:justify-between px-4 py-16 sm:py-8 md:py-12 lg:px-16 ">
         {/* left links */}
-        <div className="flex flex-col gap-3 ml-0 sm:ml-0 text-[20px] md:text-xl md:mb-0 mb-10">
+        <div className="flex flex-col gap-3 ml-0 sm:ml-0 text-[20px] md:text-xl md:mb-0 mb-5">
           <a href="#" className=" underline font-bold mt-10 ">
             Privacy Policy
           </a>
@@ -26,7 +26,7 @@ const Footer = () => {
 
 
         {/* Middle Links */}
-        <div className="flex flex-col items-start gap-2 mt-10 text-[20px] mb-10 md:mb-0 md:text-xl">
+        <div className="flex flex-col items-start gap-2 mt-10 text-[20px] mb-5 md:mb-0 md:text-xl">
           <a href="#" className="underline font-bold mb-6">
             Follow
           </a>

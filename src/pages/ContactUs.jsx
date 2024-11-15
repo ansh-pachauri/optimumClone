@@ -5,13 +5,13 @@ import Contact from '../components/Contact';
 const Contactus = () => {
     return (
         <>
-            <div className="contactinfo flex justify-center flex-col items-center mt-28 px-4">
+            <div className="contactinfo flex justify-center flex-col items-center mt-16 px-4">
                 <div className="contactusheading">
                     <h1 className="text-[#012964] font-extrabold text-3xl md:text-5xl text-center">
                         GET IN TOUCH WITH US<span className="text-[#f66709]">.</span>
                     </h1>
                 </div>
-                <div className="contactuspageinfo flex flex-col md:flex-row justify-evenly w-full mt-16 md:mt-28 space-y-10 md:space-y-0 md:space-x-10">
+                <div className="contactuspageinfo flex flex-col md:flex-row justify-evenly w-full mt-16 md:mt-20 space-y-10 md:space-y-0 md:space-x-10">
                     <div className="location flex flex-col md:flex-row items-center">
                         <div className="locationimg h-12 w-12 md:h-16 md:w-16 mr-0 md:mr-10 flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" height="50" width="55" viewBox="0 0 384 512" className="w-full h-full">
@@ -57,7 +57,7 @@ const Contactus = () => {
                     </h1>
                 </div>
             </div>
-            <Contact/>
+            <Contact />
         </>
     );
 };

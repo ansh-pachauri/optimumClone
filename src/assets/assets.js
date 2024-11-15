@@ -23,13 +23,24 @@ import phone from "./phone.jpg"
 import main from "./main.jpg"
 import media from "./media.jpg"
 import mail from "./mail.jpg"
-
-
+import admarketing from "./admarketing.jpg"
+import banner from "./banner.jpg"
+import ottmarketing from "./ottmarketing.jpg"
+import product from "./product.jpg"
+import socialmedia from "./socialmedia.jpg"
+import videoadd from "./videoadd.jpg"
+import man from "./man.jpg"
+import mediafund from "./mediafunding.jpg"
+import nondilute from "./nondilute.jpg"
+import topfundimg from "./fundingtop.jpg"
+import beyound from "./beyond.jpg"
+import shadowlogo from "./shadowlogo.png"
+import typewrt from "./typewrt.jpg"
 
 export const assets ={
-    letimage,
-    letsimage2,
-    letimagedit,
+    letimage,admarketing,banner,ottmarketing,product,socialmedia,videoadd,
+    letsimage2,man,mediafund,nondilute,topfundimg,beyound,
+    letimagedit,shadowlogo,typewrt,
     linkedln,
     facebook,
     instagram,

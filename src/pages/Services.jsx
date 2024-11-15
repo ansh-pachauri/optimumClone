@@ -59,7 +59,7 @@ const Services = () => {
 
         <div className="lg:mt-0 mt-12">
           <img
-            className=" rounded-lg w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover"
+            className=" rounded-lg w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover drop-shadow-xl"
             src={assets.consulting}
           />
         </div>
@@ -70,7 +70,7 @@ const Services = () => {
       <div className="bg-gray-100 flex flex-col lg:flex-row justify-between items-start gap-6 lg:gap-10 text-left px-4 py-16 sm:py-8 md:py-12 lg:px-16">
         <div className=" lg:mt-0 mt-12">
           <img
-            className=" rounded-lg w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover "
+            className=" rounded-lg w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover drop-shadow-xl "
             src={assets.targeting}
           />
         </div>
@@ -136,7 +136,7 @@ const Services = () => {
 
         <div className=" lg:mt-0 mt-12">
           <img
-            className=" rounded-lg  w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover"
+            className=" rounded-lg  w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover drop-shadow-xl"
             src={assets.development}
           />
         </div>
@@ -147,7 +147,7 @@ const Services = () => {
       <div className="bg-gray-100 flex flex-col lg:flex-row justify-between items-start gap-6 lg:gap-10 text-left px-4 py-16 sm:py-8 md:py-12 lg:px-16">
         <div className=" lg:mt-0 mt-12">
           <img
-            className=" rounded-lg w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover "
+            className=" rounded-lg w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover drop-shadow-xl "
             src={assets.optimize}
           />
         </div>
@@ -213,7 +213,7 @@ const Services = () => {
 
         <div className="lg:mt-0 mt-12">
           <img
-            className=" rounded-lg w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover "
+            className=" rounded-lg w-full h-[200px] md:h-[250px] lg:h-[300px] object-cover drop-shadow-xl"
             src={assets.analysis}
           />
         </div>

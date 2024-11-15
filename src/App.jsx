@@ -7,6 +7,8 @@ import Product from "./pages/Product";
 import Services from "./pages/Services";
 import Contact from "./components/Contact";
 import Contactus from "./pages/ContactUs";
+import Card from "./components/Card";
+import Footer2 from "./components/Footer2";
 
 
 function App() {
@@ -19,10 +21,11 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contactus />} />
         <Route path="/connect" element={<LetsConnect />} />
+        <Route path="/funding" element={<Card />} />
       </Routes>
       
-
-      <Footer />
+      <Footer2 />
+      
     </div>
   );
 }

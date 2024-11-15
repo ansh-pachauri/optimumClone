@@ -22,7 +22,7 @@ import girlsmile from "./girlsmile.jpg"
 import phone from "./phone.jpg"
 import main from "./main.jpg"
 import media from "./media.jpg"
-
+import mail from "./mail.jpg"
 
 
 
@@ -50,6 +50,7 @@ export const assets ={
     girlsmile,
     phone,
     main,
-    media
+    media,
+    mail
 
 }

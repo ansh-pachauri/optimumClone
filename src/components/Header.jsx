@@ -14,17 +14,17 @@ const Header = () => {
 
   return (
     <>
-      <div className="header w-full h-28 bg-[#012964] flex items-center justify-between px-5 sm:px-10 lg:px-20">
+      <div className="header w-full h-28 sm:h-24 bg-[#012964] flex items-center justify-between px-5 sm:px-10 lg:px-20">
         {/* Logo */}
         <div className="header1 flex items-center">
           <img
             src={assets.footerlogo}
-            className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[310px]"
+            className="w-[120px] sm:w-[180px] md:w-[220px] lg:w-[250px]"
             alt="Logo"
           />
         </div>
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex text-white text-[14px] sm:text-[16px] space-x-4 lg:space-x-8">
+        <div className="hidden md:flex text-white font-bold items-center text-[14px] sm:text-[18px] space-x-6 lg:space-x-10">
           <Link to="/" className="hover:text-blue-300">
             Home
           </Link>
@@ -39,7 +39,7 @@ const Header = () => {
           </Link>
           <Link
             to="/connect"
-            className="w-[120px] h-10 bg-[#2761f1] rounded-full flex items-center justify-center transition ease-linear hover:bg-[#2a4a9c]"
+            className="w-[120px] h-12 bg-[#2761f1]  rounded-full flex items-center justify-center transition ease-linear hover:bg-[#2a4a9c]"
           >
             <span className="text-white text-[14px] font-bold">
               Let's Connect
@@ -65,7 +65,7 @@ const Header = () => {
 
       {/* Hamburger menu content */}
       {isMenuOpen && (
-        <div className="hamburger-menu bg-[#012964] text-white text-center py-4 md:hidden flex flex-col gap-2 font-bold">
+        <div className="hamburger-menu bg-[#012964] text-white text-center py-4  flex flex-col gap-2 font-bold md:hidden z-40">
         <Link
                 to="/"
                 className="text-white text-2xl hover:text-blue-300"
@@ -101,7 +101,7 @@ const Header = () => {
                 className="w-full h-12 bg-[#2761f1] rounded-full flex items-center justify-center transition ease-linear hover:bg-[#2a4a9c]"
                 onClick={toggleMenu}
               >
-                <span className="text-white text-xl font-bold">
+                <span className="text-white text-lg font-bold">
                   Let's Connect
                 </span>
               </Link>

@@ -18,8 +18,8 @@ const Services = () => {
 
       {/* Introduction */}
       <div className="bg-white text-center px-4 py-8 md:py-12 lg:px-10">
-        <p className="text-xl font-bold text-black max-w-3xl mx-auto leading-relaxed sm:text-xl md:text-2xl sm:max-w-xl md:max-w-3xl">
-          At Shadow Marketing LLC, we know that effective advertising goes beyond just placing an ad, it’s about creating a targeted, optimized, and results-driven campaign that connects with your audience in meaningful ways.
+        <p className="text-2xl font-bold text-black max-w-3xl mx-auto leading-relaxed sm:text-xl md:text-2xl sm:max-w-xl md:max-w-3xl">
+          At Shadow Marketing LLC, we know that effective advertising goes beyond just placing an ad, it’s about creating a targeted, optimized, and results-driven campaign that connects with your audience in meaningful ways<span className="text-[#f66709]">.</span>
         </p>
       </div>
 
@@ -87,7 +87,7 @@ const Services = () => {
             </div>
             {/* Card Content */}
             <div className="p-6">
-              <h5 className="mb-2 text-2xl font-bold text-gray-900">{card.title}</h5>
+              <h5 className="mb-2 text-2xl font-bold text-gray-900">{card.title}<span className="text-[#f66709]">.</span></h5>
               <div className="text-gray-700 leading-relaxed whitespace-pre-line">
                 <ReadMoreReact
                   text={card.text}
@@ -107,8 +107,8 @@ const Services = () => {
       </div>
 
       {/* Footer Section */}
-      <div className="text-center font-bold px-4 py-5 text-lg sm:text-xl lg:text-2xl">
-        <h1>Partner with Shadow Marketing LLC to leverage our media buying and funding expertise—and watch your brand reach new heights.</h1>
+      <div className="text-center font-bold px-4 py-5 mt-7 text-lg sm:text-2xl lg:text-3xl">
+        <h1>Partner with Shadow Marketing LLC to leverage our media buying and funding expertise—and watch your brand reach new heights<span className="text-[#f66709]">.</span></h1>
       </div>
 
       <Contact />

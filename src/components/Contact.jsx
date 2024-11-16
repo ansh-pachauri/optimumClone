@@ -66,7 +66,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row justify-around p-8 sm:p-8 bg-white space-y-6 lg:space-y-0">
+      <div className="flex flex-col items-center justify-center lg:flex-row  p-8 sm:p-8 bg-white space-y-6 lg:space-y-0">
         <div className="mb-8 lg:mb-0 lg:max-w-md xl:max-w-2xl">
           <img src={assets.letsimage2} className="w-full max-w-2xl rounded-lg" />
         </div>

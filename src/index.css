@@ -18,3 +18,7 @@
     position: relative;
     top: -100%;
 }
+
+.man-card {
+    justify-items: first baseline;
+}

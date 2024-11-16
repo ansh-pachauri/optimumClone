@@ -71,7 +71,7 @@ const Product = () => {
             </div>
             {/* Card Content */}
             <div className="p-6">
-              <h5 className="mb-2 text-2xl font-bold text-gray-900">{card.title}</h5>
+              <h5 className="mb-2 text-2xl font-bold text-gray-900">{card.title}<span className="text-[#f66709]">.</span></h5>
               <div className="text-gray-700 leading-relaxed whitespace-pre-line">
                 <ReadMoreReact
                   text={card.text}

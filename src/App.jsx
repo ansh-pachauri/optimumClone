@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer";
+
 import Header from "./components/Header";
 import LetsConnect from "./pages/LetsConnect";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import Services from "./pages/Services";
-import Contact from "./components/Contact";
+
 import Contactus from "./pages/ContactUs";
 import Card from "./components/Card";
 import Footer2 from "./components/Footer2";

@@ -5,9 +5,23 @@ import Contact from '../components/Contact';
 const Contactus = () => {
     return (
         <>
+        <div className="relative w-full h-[400px]  sm:h-[300px] md:h-[400px]">
+        {/* image  */}
+        <img src={assets.contact} className="w-full  h-full object-cover " />
+        <div className="absolute inset-0 flex items-center justify-center ">
+          <div className="bg-[#E35F58] bg-opacity-50 w-full flex justify-center items-start py-6 mt-72 px-4 ml-10 mr-10 lg:ml-20 lg:mr-20 sm:px-20 md:px-32">
+            <h1 className="text-white text-4xl sm:text-3xl md:text-4xl  font-bold">
+              Services
+            </h1>
+          </div>
+        </div>
+      </div>
+      
+
+
             <div className="contactinfo flex justify-center flex-col items-center mt-16 px-4">
                 <div className="contactusheading">
-                    <h1 className="text-[#012964] font-extrabold text-3xl md:text-5xl text-center">
+                    <h1 className="text-gray-800 font-extrabold text-3xl md:text-5xl text-center">
                         GET IN TOUCH WITH US<span className="text-[#f66709]">.</span>
                     </h1>
                 </div>
@@ -52,7 +66,7 @@ const Contactus = () => {
                 </div>
 
                 <div className="contactusheading mt-16 p-4 md:p-16">
-                    <h1 className="text-[#012964] font-extrabold text-3xl md:text-5xl text-center leading-relaxed">
+                    <h1 className="text-gray-800 font-extrabold text-3xl md:text-5xl text-center leading-relaxed">
                         Excited to elevate your business and brand <span className="text-[#f66709]">?</span> Fill out the form below, and let’s unlock new possibilities together<span className="text-[#f66709]">.</span>
                     </h1>
                 </div>

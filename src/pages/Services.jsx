@@ -11,7 +11,7 @@ const Services = () => {
         {/* image  */}
         <img src={assets.service} className="w-full  h-full object-cover " />
         <div className="absolute inset-0 flex items-center justify-center ">
-          <div className="bg-[#002864] bg-opacity-50 w-full flex justify-center items-start py-6 mt-72 px-4 ml-10 mr-10 lg:ml-20 lg:mr-20 sm:px-20 md:px-32">
+          <div className="bg-[#E35F58] bg-opacity-50 w-full flex justify-center items-start py-6 mt-72 px-4 ml-10 mr-10 lg:ml-20 lg:mr-20 sm:px-20 md:px-32">
             <h1 className="text-white text-4xl sm:text-3xl md:text-4xl  font-bold">
               Services
             </h1>
@@ -31,11 +31,11 @@ const Services = () => {
       {/* counselting */}
       <div className="bg-white flex flex-col lg:flex-row justify-between items-start gap-6 lg:gap-10 text-left  px-4 py-16 sm:py-8 md:py-12 lg:px-16">
         <div className="flex flex-col gap-6">
-          <h1 className="text-xl font-bold text-blue-900 ">
+          <h1 className="text-xl font-bold text-black ">
             ● Strategic Consulting
           </h1>
 
-          <div className="text-md sm:text-lg font-medium text-blue-900 max-w-3xl leading-relaxed font-sans space-y-4 whitespace-pre-line ">
+          <div className="text-md sm:text-lg font-medium text-gray-700 max-w-3xl leading-relaxed font-sans space-y-4 whitespace-pre-line ">
             <ReadMoreReact
               text={
                  `During the consultation process, we work closely with your team to understand your brand, your unique selling points, and your ideal customer profile. This collaborative approach ensures that each campaign is tailored to your business objectives and designed for maximum impact.
@@ -76,10 +76,10 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col gap-6">
-          <h1 className="text-xl font-bold text-blue-900 ">
+          <h1 className="text-xl font-bold text-black ">
             ● Targeting & Retargeting
           </h1>
-          <div className="text-md sm:text-lg font-medium text-blue-900 max-w-3xl leading-relaxed font-sans space-y-4 whitespace-pre-line ">
+          <div className="text-md sm:text-lg font-medium text-gray-700 max-w-3xl leading-relaxed font-sans space-y-4 whitespace-pre-line ">
             <ReadMoreReact
               text={
                  `Reaching the right audience at the right time is essential for any ad campaign’s success.  Our targeting services use advanced data analytics and proprietary tools to hone in on high-intent audiences, ensuring your ads reach those most likely to convert.  For retargeting, we reconnect with individuals who have previously shown interest in your brand, reinforcing your message and driving higher engagement.
@@ -107,10 +107,10 @@ const Services = () => {
 
       <div className="bg-white flex flex-col lg:flex-row justify-between items-start gap-6 lg:gap-10 text-left px-4 py-16 sm:py-8 md:py-12 lg:px-16">
         <div className="flex flex-col gap-6">
-          <h1 className="text-xl font-semibold text-blue-900 ">
+          <h1 className="text-xl font-bold text-black ">
             ● Creative development and testing
           </h1>
-          <div className="text-md sm:text-lg font-medium text-blue-900 max-w-3xl leading-relaxed font-sans space-y-4 whitespace-pre-line ">
+          <div className="text-md sm:text-lg font-medium text-gray-700 max-w-3xl leading-relaxed font-sans space-y-4 whitespace-pre-line ">
             <ReadMoreReact
               text={
                  `Engaging ad creatives are critical to capturing attention and converting interest into action. Our creative development team crafts compelling visuals and messaging that resonate with your audience, whether it’s for a 30-second pre-roll video or a targeted banner ad.  
@@ -153,10 +153,10 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col gap-6">
-          <h1 className="text-xl font-semibold text-blue-900 ">
+          <h1 className="text-xl font-bold text-black ">
             ● Campaign Management & Optimization
           </h1>
-          <div className="text-md sm:text-lg font-medium text-blue-900 max-w-3xl leading-relaxed font-sans space-y-4 whitespace-pre-line ">
+          <div className="text-md sm:text-lg font-medium text-gray-700 max-w-3xl leading-relaxed font-sans space-y-4 whitespace-pre-line ">
             <ReadMoreReact
               text={
                  `Our end-to-end campaign management services ensure that your ads run smoothly, stay on budget, and deliver on key performance metrics.  We handle everything from setting up campaigns to real-time monitoring and adjusting, so you can focus on your business. With detailed analytics and insights, we provide ongoing optimization to keep your campaigns performing at their best.
@@ -184,10 +184,10 @@ const Services = () => {
 
       <div className="bg-white flex flex-col lg:flex-row justify-between items-start gap-6 lg:gap-10 text-left px-4 py-16 sm:py-8 md:py-12 lg:px-16">
         <div className="flex flex-col gap-6">
-          <h1 className="text-xl font-semibold text-blue-900 ">
+          <h1 className="text-xl font-bold text-black ">
             ● Advanced Analytics and Reporting
           </h1>
-          <div className="text-md sm:text-lg font-medium text-blue-900 max-w-3xl leading-relaxed font-sans space-y-4 whitespace-pre-line ">
+          <div className="text-md sm:text-lg font-medium text-gray-700 max-w-3xl leading-relaxed font-sans space-y-4 whitespace-pre-line ">
             <ReadMoreReact
               text={
                  `Our advanced analytics services give you an in-depth view of your campaign’s success, showing exactly how each ad contributes to your goals. We provide customized reports that track metrics like reach, engagement, conversion rates, and ROI, helping you understand what’s working and where there’s room for improvement. This data-driven approach enables continuous optimization and fuels long-term campaign success.

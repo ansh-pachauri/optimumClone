@@ -4,23 +4,14 @@ import { assets } from "../assets/assets";
 const Card = () => {
   return (
     <>
-      {/* Top Section with Background Image */}
-      <div className="relative w-full h-[400px] sm:h-[300px] md:h-[400px]">
-        {/* Background Image */}
-        <img src={assets.typewrt} className="w-full h-full object-cover" alt="Funding Background" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-[#002864] bg-opacity-50 w-full flex justify-center items-start py-6 mt-72 px-4 sm:px-8 lg:px-20">
-            <h1 className="text-white text-4xl sm:text-3xl md:text-4xl font-bold">Funding</h1>
-          </div>
-        </div>
-      </div>
+      
 
       {/* the small paragraph */}
       <div className="text-center  p-10 ">
-        <h4 className="font-bold text-blue-900 text-2xl mb-5  ">
+        <h4 className="font-bold text-black text-2xl mb-5  ">
         Your Business is one step away from achieving your goals
         </h4>
-        <p className="font-semibold text-blue-700 text-center text-lg">
+        <p className="font-semibold text-gray-700 text-center text-lg">
         No one understands direct-response business challenges like Shadow Marketing LLC. We recognize the difficulty of finding a reliable funding partner, especially in the dynamic world of direct response, e-commerce, and DTC marketing. We’ve developed a solution to ensure you can secure the capital required for growth without relinquishing equity. It’s your vision, your hard work, and your success—kept entirely in your hands.
         </p>
       </div>

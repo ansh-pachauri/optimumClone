@@ -36,12 +36,14 @@ import topfundimg from "./fundingtop.jpg"
 import beyound from "./beyond.jpg"
 import shadowlogo from "./shadowlogo.png"
 import typewrt from "./typewrt.jpg"
+import clogo from "./clogo.png"
+import contact from "./contact.jpg"
 
 export const assets ={
     letimage,admarketing,banner,ottmarketing,product,socialmedia,videoadd,
     letsimage2,man,mediafund,nondilute,topfundimg,beyound,
-    letimagedit,shadowlogo,typewrt,
-    linkedln,
+    letimagedit,shadowlogo,typewrt,clogo,
+    linkedln,contact,
     facebook,
     instagram,
     logo,

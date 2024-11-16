@@ -20,7 +20,7 @@ const Input = ({name, label, register, required ,type,pattern,onChange, placehol
 );
 
 const Select = React.forwardRef(({ name,label, register }, ref) => (
-    <div className="mb-4">
+    <div className="mb-4 mt-3">
       <label htmlFor={name} className="block text-blue-800 font-medium mb-1">{label}</label>
       <select
       id={name}

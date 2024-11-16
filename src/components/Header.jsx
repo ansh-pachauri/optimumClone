@@ -13,31 +13,31 @@ const Header = () => {
 
   return (
     <>
-      <div className="header w-full h-28 bg-[#012964] flex items-center justify-between px-5 sm:px-10 lg:px-20">
+      <div className="header w-full h-28 bg-[#AB0505] flex items-center justify-between px-5 sm:px-10 lg:px-20">
         <div className="header1 flex items-center">
           <img
-            src={assets.shadowlogo}
+            src={assets.clogo}
             className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[310px]"
             alt="Logo"
           />
         </div>
 
         <div className="header2 hidden md:flex text-[#ffffff] text-[16px]">
-        <Link to="/" className='ml-10 mr-10 hover:text-[#ffffffbd] font-semibold'>Home</Link>
+        <Link to="/" className='ml-10 mr-10 hover:text-[#ffffffbd] font-bold text-lg '>Home</Link>
 
-        <Link to="/product" className='mr-10 hover:text-[#ffffffbd] font-semibold'>Product</Link>
+        <Link to="/product" className='mr-10 hover:text-[#ffffffbd] font-bold text-lg'>Product</Link>
 
-        <Link to="/services" className='mr-10 hover:text-[#ffffffbd] font-semibold'>Services</Link>
+        <Link to="/services" className='mr-10 hover:text-[#ffffffbd] font-bold text-lg'>Services</Link>
 
-        <Link to="/contact" className='mr-10 hover:text-[#ffffffbd] font-semibold'>Contact Us</Link>
+        <Link to="/contact" className='mr-10 hover:text-[#ffffffbd] font-bold text-lg'>Contact Us</Link>
 
           
           
         </div>
 
         <div className="header3 hidden md:flex items-center justify-center">
-          <div className="btn w-[150px] h-16 bg-[#2761f1] rounded-[60px] flex items-center justify-center transition ease-linear delay-75 hover:bg-opacity-65">
-          <Link to="/connect" className='text-[#ffffff] text-[15px] font-bold' >Let's Connect</Link>
+          <div className="btn w-[150px] h-16 bg-[#D94C4C] rounded-[60px] flex items-center justify-center transition ease-linear delay-75 hover:bg-opacity-65">
+          <Link to="/connect" className='text-[#ffffff] text-[18px] font-bold ' >Let's Connect</Link>
         
           </div>
         </div>
@@ -55,7 +55,7 @@ const Header = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="hamburger-menu bg-[#012964] text-white text-center py-4 md:hidden">
+        <div className="hamburger-menu bg-[#AB0505] text-white text-center py-4 md:hidden">
         <Link to="/" className='block py-2 hover:text-[#ffffffbd] font-semibold'>Home</Link>
 
         <Link to="/product" className='block py-2 hover:text-[#ffffffbd] font-semibold'>Products</Link>
@@ -66,7 +66,7 @@ const Header = () => {
 
           
 
-          <div className="btn w-[150px] h-16 bg-[#2761f1] rounded-[60px] flex items-center justify-center transition ease-linear delay-75 hover:bg-opacity-65 mt-4 mx-auto">
+          <div className="btn w-[150px] h-16 bg-[#D94C4C] rounded-[60px] flex items-center justify-center transition ease-linear delay-75 hover:bg-opacity-65 mt-4 mx-auto">
           <Link to="/connect"className="text-[#ffffff] text-[15px] font-bold">Lets Connect</Link>
             
           </div>

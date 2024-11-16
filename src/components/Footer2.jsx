@@ -5,13 +5,16 @@ import { assets } from "../assets/assets";
 const Footer2 = () => {
   return (
     <>
-      <footer className="bg-[#002865] text-white">
+      <footer className="bg-[#AB0505] text-white">
         <div className="mx-auto w-full max-w-screen-xl p-6 lg:p-8">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center">
             <div className="mb-6 md:mb-0 flex flex-col items-center md:flex-row md:items-start">
-              <Link to="/" className="flex flex-col items-center md:items-start">
+              <Link
+                to="/"
+                className="flex flex-col items-center md:items-start"
+              >
                 <img
-                  src={assets.shadowlogo}
+                  src={assets.clogo}
                   className="h-32 mb-2 md:mb-0 md:mr-4"
                   alt="Marketing Logo"
                 />
@@ -63,7 +66,7 @@ const Footer2 = () => {
           <hr className="my-6 border-gray-500" />
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
             <span className="text-sm text-gray-400 text-center sm:text-left">
-              © 2023
+              © 2024
               <Link to="/" className="hover:underline text-white font-semibold">
                 {" "}
                 Shadow Marketing LLC™
@@ -89,6 +92,25 @@ const Footer2 = () => {
                 </svg>
                 <span className="sr-only">Facebook page</span>
               </a>
+
+              {/* Mail icon  */}
+
+              <a
+                href="#"
+                className="text-white hover:text-gray-300 mx-3"
+              >
+                <svg
+                  className="w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm2 0v1.17L12 11l8-5.83V4H4zm0 2.51V20h16V6.51l-8 5.82-8-5.82z" />
+                </svg>
+
+                <span className="sr-only">Mail Id</span>
+              </a>
+
               <a
                 href="https://www.linkedin.com/in/sheryl-herfurth-b89a919/"
                 className="text-white hover:text-gray-300 mx-3"

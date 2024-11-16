@@ -10,7 +10,7 @@ const Main1 = () => {
                
 
                 <div className="main1b hidden hide-on-mobile md:flex bg-[#CD0505] bg-opacity-70 p-12 md:p-16 flex-col text-white transition ease-linear delay-75 sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[35%] hover:text-[#012964] hover:bg-white">
-                    <p className="text-4xl font-bold leading-snug">
+                    <p className="text-4xl font-bold leading-snug  ">
                         At Shadow Marketing LLC, we empower brands to grow through innovative, equity-free funding and data-driven media solutions.  Our mission is to maximize your reach and impact with targeted strategies that drive you revenue<span className="text-[#f66709]">.</span>
                     </p>
                 </div>
@@ -18,7 +18,7 @@ const Main1 = () => {
 
             {/* mobile view */}
             <div className="main1b md:hidden w-full bg-[#CD0505] bg-opacity-70 text-white flex flex-col items-center py-8">
-                <p className="text-4xl font-bold leading-snug px-10">
+                <p className="text-2xl font-semibold leading-snug px-10">
                     At Shadow Marketing LLC, we empower brands to grow through innovative, equity-free funding and data-driven media solutions.  Our mission is to maximize your reach and impact with targeted strategies that drive you revenue<span className="text-[#f66709]">.</span>
                 </p>
             </div>

@@ -38,13 +38,15 @@ import shadowlogo from "./shadowlogo.png"
 import typewrt from "./typewrt.jpg"
 import clogo from "./clogo.png"
 import contact from "./contact.jpg"
+import letaconnecticon from "./letsconnecticon.jpg"
+import contact1 from "./contact-min.jpg"
 
 export const assets ={
     letimage,admarketing,banner,ottmarketing,product,socialmedia,videoadd,
     letsimage2,man,mediafund,nondilute,topfundimg,beyound,
     letimagedit,shadowlogo,typewrt,clogo,
     linkedln,contact,
-    facebook,
+    facebook,letaconnecticon,contact1,
     instagram,
     logo,
     service,

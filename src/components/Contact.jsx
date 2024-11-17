@@ -68,7 +68,7 @@ const Contact = () => {
     <>
       <div className="flex flex-col items-center justify-between lg:flex-row  p-8 sm:p-8 bg-white space-y-4 lg:space-y-0">
         <div className="mb-8 lg:mb-0 lg:max-w-md xl:max-w-2xl">
-          <img src={assets.letsimage2} className="w-full max-w-2xl rounded-lg" />
+          <img src={assets.letaconnecticon} className="w-full max-w-2xl rounded-lg" />
         </div>
         {/* rightside form */}
         <div className="w-full lg:max-w-md xl:max-w-2xl bg-white  sm:p-8 max-w-2xl p-8 rounded-lg ">
@@ -196,7 +196,7 @@ const Contact = () => {
             <p className=" font-bold text-[#E35F58] mt-6 text-[12px] sm:text-sm">We do not intend to collect or process personal information. Nevertheless, if you provide such information to us, you affirmatively consent to us collecting and processing it. </p>
 
             <input type="submit" 
-             className="mt-4 w-full bg-[#E35F58] text-white font-bold py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" />
+             className="mt-4 w-full bg-[#AB0505] text-white font-bold py-2 rounded-md hover:bg-[#E35F58] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" />
           </form>
         </div>
       </div>

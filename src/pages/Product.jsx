@@ -73,11 +73,11 @@ const Product = () => {
             </div>
             {/* Card Content */}
             <div className="p-6">
-              <h5 className="mb-2 text-2xl font-bold text-gray-900">
+              <h5 className="mb-2 text-2xl font-bold text-gray-900 text-justify">
                 {card.title}
                 
               </h5>
-              <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+              <p className="text-gray-700 leading-relaxed whitespace-pre-line text-justify">
                 {card.text}
               </p>
             </div>

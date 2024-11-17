@@ -95,11 +95,11 @@ const Services = () => {
             </div>
             {/* Card Content */}
             <div className="p-6">
-              <h5 className="mb-2 text-2xl font-bold text-gray-900">
+              <h5 className="mb-2 text-2xl font-bold text-gray-900 text-justify">
                 {card.title}
                 
               </h5>
-              <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+              <p className="text-gray-700 leading-relaxed whitespace-pre-line text-justify">
                 {card.text}
               </p>
             </div>
@@ -111,8 +111,7 @@ const Services = () => {
       <div className="text-center font-bold px-4 py-5 mt-7 mb-10 text-lg sm:text-2xl lg:text-3xl">
         <h1>
           Partner with Shadow Marketing LLC to leverage our media buying and
-          funding expertise—and watch your brand reach new heights
-          .
+          funding expertise—and watch your brand reach new heights.
         </h1>
       </div>
     </>

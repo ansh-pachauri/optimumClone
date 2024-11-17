@@ -13,11 +13,11 @@ const Header = () => {
 
   return (
     <>
-      <div className="header w-full h-28 bg-[#AB0505] flex items-center justify-between px-5 sm:px-10 lg:px-20">
+      <div className="header w-full h-32 bg-[#AB0505] flex items-center justify-between px-5 sm:px-10 lg:px-20">
         <div className="header1 flex items-center">
           <img
             src={assets.clogo}
-            className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[320px] lg:h-40"
+            className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[290px] lg:h-[120px]"
             alt="Logo"
           />
         </div>

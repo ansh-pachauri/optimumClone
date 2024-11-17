@@ -7,7 +7,7 @@ const Contactus = () => {
         <>
         <div className="relative w-full h-[400px]  sm:h-[300px] md:h-[400px]">
         {/* image  */}
-        <img src={assets.contact} className="w-full  h-full object-cover " />
+        <img src={assets.contact1} className="w-full  h-full object-cover " />
         <div className="absolute inset-0 flex items-center justify-center ">
           <div className="bg-[#E35F58] bg-opacity-50 w-full flex justify-center items-start py-6 mt-72 px-4 ml-10 mr-10 lg:ml-20 lg:mr-20 sm:px-20 md:px-32">
             <h1 className="text-white text-4xl sm:text-3xl md:text-4xl  font-bold">
@@ -22,7 +22,7 @@ const Contactus = () => {
             <div className="contactinfo flex justify-center flex-col items-center mt-16 px-4">
                 <div className="contactusheading">
                     <h1 className="text-gray-800 font-extrabold text-3xl md:text-5xl text-center">
-                        GET IN TOUCH WITH US<span className="text-[#f66709]">.</span>
+                        GET IN TOUCH WITH US.
                     </h1>
                 </div>
                 <div className="contactuspageinfo flex flex-col md:flex-row justify-evenly w-full mt-16 md:mt-20 space-y-10 md:space-y-0 md:space-x-10">
@@ -60,14 +60,14 @@ const Contactus = () => {
                         </div>
                         <div className="emailinfo flex flex-col items-center md:items-start">
                             <h2 className="text-[#2761f1] font-semibold text-xl md:text-2xl mb-4 md:mb-6">Email Address</h2>
-                            <h5 className="text-lg md:text-xl">Admin@shadowmarketingllc.com</h5>
+                            <h5 className="text-lg md:text-xl">admin@shadowmarketingllc.com</h5>
                         </div>
                     </div>
                 </div>
 
                 <div className="contactusheading mt-16 p-4 md:p-16">
                     <h1 className="text-gray-800 font-extrabold text-3xl md:text-5xl text-center leading-relaxed">
-                        Excited to elevate your business and brand <span className="text-[#f66709]">?</span> Fill out the form below, and let’s unlock new possibilities together<span className="text-[#f66709]">.</span>
+                        Excited to elevate your business and brand ? Fill out the form below, and let’s unlock new possibilities together.
                     </h1>
                 </div>
             </div>

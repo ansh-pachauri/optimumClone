@@ -11,7 +11,7 @@ const Card = () => {
         <h4 className="font-bold text-black text-3xl mb-5  ">
         Your Business is one step away from achieving your goals.
         </h4>
-        <p className="font-semibold text-gray-700 text-center text-xl">
+        <p className="font-semibold text-gray-700 text-center text-xl  ">
         No one understands direct-response business challenges like Shadow Marketing LLC. We recognize the difficulty of finding a reliable funding partner, especially in the dynamic world of direct response, e-commerce, and DTC marketing. We’ve developed a solution to ensure you can secure the capital required for growth without relinquishing equity. It’s your vision, your hard work, and your success—kept entirely in your hands.
         </p>
       </div>
@@ -28,11 +28,11 @@ const Card = () => {
             src={assets.nondilute}
             alt="Non-Dilutive Funding"
           />
-          <div className="flex flex-col justify-between p-4 leading-normal">
+          <div className="flex flex-col  justify-between p-4 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white transition ease-linear delay-75 hover:bg-re">
               What Is Non-Dilutive Funding?
             </h5>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p className="mb-3 font-normal text-justify text-gray-700 dark:text-gray-400">
               Non-dilutive funding means that you maintain complete ownership of your business. Unlike other funding channels that seek equity, we provide the credit you need to expand without taking a stake in your company.
             </p>
           </div>
@@ -48,11 +48,11 @@ const Card = () => {
             src={assets.mediafund}
             alt="Media Funding"
           />
-          <div className="flex flex-col justify-between p-4 leading-normal">
+          <div className="flex flex-col  justify-between p-4 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               How does Media Funding work?
             </h5>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p className="mb-3 font-normal text-justify text-gray-700 dark:text-gray-400">
               Media funding is a specialized credit line allocated exclusively for your marketing and advertising efforts. With guaranteed media funding, you can expand your reach without constantly reinvesting operational revenue into your campaigns.
             </p>
           </div>
@@ -68,11 +68,11 @@ const Card = () => {
             src={assets.man}
             alt="Ideal Candidate for Media Funding"
           />
-          <div className="flex flex-col justify-between p-4 leading-normal">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <div className="flex flex-col  justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight lg:text-justify text-gray-900 dark:text-white">
               Are you an ideal candidate for Media Funding?
             </h5>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p className="mb-3 font-normal text-justify text-gray-700 dark:text-gray-400">
               If you have any of the following, you may be a strong candidate for our Media Funding solution:
               <ul className="list-disc ml-4">
                 <li>A large reserve held by your merchant processor</li>
@@ -94,11 +94,11 @@ const Card = () => {
             src={assets.beyound}
             alt="Beyond Funding"
           />
-          <div className="flex flex-col justify-between p-4 leading-normal">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <div className="flex flex-col  justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white lg:text-justify">
               Beyond Funding: Industry experts you can rely on.
             </h5>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p className="mb-3 font-normal text-justify text-gray-700 dark:text-gray-400">
               At Shadow Marketing LLC, we do more than provide capital. With decades of experience in direct response marketing and brand advertising, our team offers the guidance and strategic insights you need to thrive.
             </p>
           </div>

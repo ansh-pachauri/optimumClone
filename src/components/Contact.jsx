@@ -7,7 +7,7 @@ import emailjs from "emailjs-com";
 const Input = ({name, label, register, required ,type,pattern,onChange, placeholder}) => (
   <>
     <label htmlFor={name} 
-     className="block text-blue-800 font-medium mt-3">{label}</label>
+     className="block text-[#E35F58] font-medium mt-3">{label}</label>
     <input {...register(label, { required })}
     id={name}
     type={type}
@@ -21,7 +21,7 @@ const Input = ({name, label, register, required ,type,pattern,onChange, placehol
 
 const Select = React.forwardRef(({ name,label, register }, ref) => (
     <div className="mb-4 mt-3">
-      <label htmlFor={name} className="block text-blue-800 font-medium mb-1">{label}</label>
+      <label htmlFor={name} className="block text-[#E35F58] font-medium mb-1">{label}</label>
       <select
       id={name}
         {...register("How Did You Hear About Us?")}
@@ -66,7 +66,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center lg:flex-row  p-8 sm:p-8 bg-white space-y-6 lg:space-y-0">
+      <div className="flex flex-col items-center justify-between lg:flex-row  p-8 sm:p-8 bg-white space-y-4 lg:space-y-0">
         <div className="mb-8 lg:mb-0 lg:max-w-md xl:max-w-2xl">
           <img src={assets.letsimage2} className="w-full max-w-2xl rounded-lg" />
         </div>
@@ -193,10 +193,10 @@ const Contact = () => {
                 required: { value: true, message: "Please select an option" },
               }} /> 
 
-            <p className=" font-bold text-[#678FF5] mt-6 text-[12px] sm:text-sm">We do not intend to collect or process personal information. Nevertheless, if you provide such information to us, you affirmatively consent to us collecting and processing it. </p>
+            <p className=" font-bold text-[#E35F58] mt-6 text-[12px] sm:text-sm">We do not intend to collect or process personal information. Nevertheless, if you provide such information to us, you affirmatively consent to us collecting and processing it. </p>
 
             <input type="submit" 
-             className="mt-4 w-full bg-blue-500 text-white font-bold py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" />
+             className="mt-4 w-full bg-[#E35F58] text-white font-bold py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" />
           </form>
         </div>
       </div>

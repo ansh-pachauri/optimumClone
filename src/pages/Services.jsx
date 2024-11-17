@@ -1,17 +1,22 @@
 import React from "react";
 import { assets } from "../assets/assets";
 import Contact from "../components/Contact";
-import ReadMoreReact from "read-more-react";
 
 const Services = () => {
   return (
     <>
       {/* Hero Section */}
       <div className="relative w-full h-[400px] sm:h-[300px] md:h-[400px]">
-        <img src={assets.service} className="w-full h-full object-cover" alt="Services" />
+        <img
+          src={assets.service}
+          className="w-full h-full object-cover"
+          alt="Services"
+        />
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-[#E35F58] bg-opacity-50 w-full flex justify-center items-start py-6 mt-72 px-4 lg:px-20">
-            <h1 className="text-white text-4xl sm:text-3xl md:text-4xl font-bold">Services</h1>
+          <div className="bg-[#E35F58] bg-opacity-50 w-full flex justify-center items-start py-6 mt-72 px-4 ml-10 mr-10 lg:ml-20 lg:mr-20 sm:px-20 md:px-32">
+            <h1 className="text-white text-4xl sm:text-3xl md:text-4xl font-bold">
+              Services
+            </h1>
           </div>
         </div>
       </div>
@@ -19,7 +24,10 @@ const Services = () => {
       {/* Introduction */}
       <div className="bg-white text-center px-4 py-8 md:py-12 lg:px-10">
         <p className="text-2xl font-bold text-black max-w-3xl mx-auto leading-relaxed sm:text-xl md:text-2xl sm:max-w-xl md:max-w-3xl">
-          At Shadow Marketing LLC, we know that effective advertising goes beyond just placing an ad, it’s about creating a targeted, optimized, and results-driven campaign that connects with your audience in meaningful ways<span className="text-[#f66709]">.</span>
+          At Shadow Marketing LLC, we know that effective advertising goes
+          beyond just placing an ad, it’s about creating a targeted, optimized,
+          and results-driven campaign that connects with your audience in
+          meaningful ways.
         </p>
       </div>
 
@@ -63,7 +71,7 @@ const Services = () => {
             `,
           },
           {
-            img: assets.analysis, // Add the correct image reference for analysis here
+            img: assets.analysis,
             title: "Data Analysis & Insights",
             text: `
               Data drives every decision we make. Our analytics team provides in-depth reporting and actionable insights that help you refine and improve your campaigns.
@@ -87,31 +95,26 @@ const Services = () => {
             </div>
             {/* Card Content */}
             <div className="p-6">
-              <h5 className="mb-2 text-2xl font-bold text-gray-900">{card.title}<span className="text-[#f66709]">.</span></h5>
-              <div className="text-gray-700 leading-relaxed whitespace-pre-line">
-                <ReadMoreReact
-                  text={card.text}
-                  min={150}
-                  ideal={250}
-                  max={400}
-                  readMoreText={
-                    <span className="cursor-pointer text-blue-600 font-bold hover:underline">
-                      Read More &gt;&gt;
-                    </span>
-                  }
-                />
-              </div>
+              <h5 className="mb-2 text-2xl font-bold text-gray-900">
+                {card.title}
+                
+              </h5>
+              <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                {card.text}
+              </p>
             </div>
           </div>
         ))}
       </div>
 
       {/* Footer Section */}
-      <div className="text-center font-bold px-4 py-5 mt-7 text-lg sm:text-2xl lg:text-3xl">
-        <h1>Partner with Shadow Marketing LLC to leverage our media buying and funding expertise—and watch your brand reach new heights<span className="text-[#f66709]">.</span></h1>
+      <div className="text-center font-bold px-4 py-5 mt-7 mb-10 text-lg sm:text-2xl lg:text-3xl">
+        <h1>
+          Partner with Shadow Marketing LLC to leverage our media buying and
+          funding expertise—and watch your brand reach new heights
+          .
+        </h1>
       </div>
-
-      <Contact />
     </>
   );
 };

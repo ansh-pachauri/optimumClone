@@ -1,25 +1,27 @@
 import React from "react";
 import { assets } from "../assets/assets";
-import Contact from "../components/Contact";
-import ReadMoreReact from "read-more-react";
 
 const Product = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative w-full h-[400px] sm:h-[300px] md:h-[400px]">
-        <img src={assets.product} className="w-full h-full object-cover" alt="Services" />
+      <div className="relative w-full h-[400px]  sm:h-[300px] md:h-[400px]">
+        <img
+          src={assets.product}
+          className="w-full h-full object-cover"
+          alt="Services"
+        />
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-[#E35F58] bg-opacity-50 w-full flex justify-center items-start py-6 mt-72 px-4 lg:px-20">
-            <h1 className="text-white text-4xl sm:text-3xl md:text-4xl font-bold">Products</h1>
+          <div className="bg-[#E35F58] bg-opacity-50 w-full flex justify-center items-start py-6 mt-72 px-4 ml-10 mr-10 lg:ml-20 lg:mr-20 sm:px-20 md:px-32">
+            <h1 className="text-white text-4xl sm:text-3xl md:text-4xl font-bold">
+              Products
+            </h1>
           </div>
         </div>
       </div>
 
-     
-
       {/* Cards Section */}
-      <div className="grid gap-10 mt-10 sm:grid-cols-1 lg:grid-cols-2 px-4 sm:px-8 lg:px-20">
+      <div className="grid gap-10 mt-10 mb-10 sm:grid-cols-1 lg:grid-cols-2 px-4 sm:px-8 lg:px-20">
         {[
           {
             img: assets.admarketing,
@@ -37,7 +39,7 @@ const Product = () => {
           },
           {
             img: assets.ottmarketing,
-            title: "Over-the-Top Television Advertising (OTT) ",
+            title: "Over-the-Top Television Advertising (OTT)",
             text: `
               Our OTT Advertising solutions allow you to reach consumers on streaming platforms across devices such as smart TVs, mobile, and desktop. OTT ads provide premium, highly-viewed placements that connect your brand with audiences where they consume content most—outside of traditional cable. With OTT, you gain precise targeting capabilities, allowing you to reach specific demographics and interests for better campaign efficiency and results.
             `,
@@ -71,28 +73,17 @@ const Product = () => {
             </div>
             {/* Card Content */}
             <div className="p-6">
-              <h5 className="mb-2 text-2xl font-bold text-gray-900">{card.title}<span className="text-[#f66709]">.</span></h5>
-              <div className="text-gray-700 leading-relaxed whitespace-pre-line">
-                <ReadMoreReact
-                  text={card.text}
-                  min={150}
-                  ideal={250}
-                  max={400}
-                  readMoreText={
-                    <span className="cursor-pointer text-blue-600 font-bold hover:underline">
-                      Read More &gt;&gt;
-                    </span>
-                  }
-                />
-              </div>
+              <h5 className="mb-2 text-2xl font-bold text-gray-900">
+                {card.title}
+                
+              </h5>
+              <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                {card.text}
+              </p>
             </div>
           </div>
         ))}
       </div>
-
-     
-
-      <Contact />
     </>
   );
 };

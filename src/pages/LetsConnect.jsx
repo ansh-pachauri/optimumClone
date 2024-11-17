@@ -19,7 +19,7 @@ const LetsConnect = () => {
       </div>
       <div className="bg-white text-center p-16 sm:p-8 md:p-16 ">
         <p className="text-2xl font-bold text-blue-950 max-w-3xl mx-auto leading-relaxed font-sans sm:text-xl md:text-2xl  sm:max-w-xl md:max-w-3xl ">
-          For new customers interested in doing business with us or learning more, please fill out the form below. One of our sales representatives will be in touch as soon as possible<span className="text-[#f66709]">!</span>
+          For new customers interested in doing business with us or learning more, please fill out the form below. One of our sales representatives will be in touch as soon as possible!
         </p>
       </div>
 

@@ -23,13 +23,13 @@ const Header = () => {
         </div>
 
         <div className="header2 hidden md:flex text-[#ffffff] text-[16px]">
-        <Link to="/" className='ml-10 mr-10 hover:text-[#ffffffbd] font-bold text-lg '>Home</Link>
+        <Link to="/" className='ml-10 mr-10 hover:text-[#ffffffbd] font-bold text-xl '>Home</Link>
 
-        <Link to="/product" className='mr-10 hover:text-[#ffffffbd] font-bold text-lg'>Product</Link>
+        <Link to="/product" className='mr-10 hover:text-[#ffffffbd] font-bold text-xl'>Product</Link>
 
-        <Link to="/services" className='mr-10 hover:text-[#ffffffbd] font-bold text-lg'>Services</Link>
+        <Link to="/services" className='mr-10 hover:text-[#ffffffbd] font-bold text-xl'>Services</Link>
 
-        <Link to="/contact" className='mr-10 hover:text-[#ffffffbd] font-bold text-lg'>Contact Us</Link>
+        <Link to="/contact" className='mr-10 hover:text-[#ffffffbd] font-bold text-xl'>Contact Us</Link>
 
           
           

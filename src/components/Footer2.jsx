@@ -25,42 +25,33 @@ const Footer2 = () => {
             </div>
             <div className="grid grid-cols-2 gap-6 sm:gap-8 sm:grid-cols-3">
               <div>
-                <Link
-                  to="/privacy-policy"
+                <a
+                  href="#"
                   className="text-white hover:underline"
                 >
                   <h2 className="mb-4 text-sm font-semibold uppercase">
                     Privacy Policy
                   </h2>
-                </Link>
+                </a>
               </div>
               <div>
-                <Link to="/terms-of-use" className="text-white hover:underline">
+                <a href="#" className="text-white hover:underline">
                   <h2 className="mb-4 text-sm font-semibold uppercase">
                     Terms of Use
                   </h2>
-                </Link>
+                </a>
               </div>
               <div>
-                <Link
-                  to="/advertising-guidelines"
+                <a
+                  href="#"
                   className="text-white hover:underline"
                 >
                   <h2 className="mb-4 text-sm font-semibold uppercase">
                     Advertising Guidelines
                   </h2>
-                </Link>
+                </a>
               </div>
-              <div>
-                <Link
-                  to="/terms-and-conditions"
-                  className="text-white hover:underline"
-                >
-                  <h2 className="mb-4 text-sm font-semibold uppercase">
-                    Terms and Conditions
-                  </h2>
-                </Link>
-              </div>
+              
             </div>
           </div>
           <hr className="my-6 border-gray-500" />
@@ -93,24 +84,7 @@ const Footer2 = () => {
                 <span className="sr-only">Facebook page</span>
               </a>
 
-              {/* Mail icon  */}
-
-              <a
-                href="#"
-                className="text-white hover:text-gray-300 mx-3"
-              >
-                <svg
-                  className="w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm2 0v1.17L12 11l8-5.83V4H4zm0 2.51V20h16V6.51l-8 5.82-8-5.82z" />
-                </svg>
-
-                <span className="sr-only">Mail Id</span>
-              </a>
-
+              
               <a
                 href="https://www.linkedin.com/in/sheryl-herfurth-b89a919/"
                 className="text-white hover:text-gray-300 mx-3"

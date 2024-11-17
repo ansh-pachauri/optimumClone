@@ -4,8 +4,8 @@ import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 // import 'react-toastify/dist/ReactToastify.css';
 // import { ToastContainer, toast } from 'react-toastify';
-import dotenv from "dotenv"
-dotenv.config()
+// import dotenv from "dotenv"
+// dotenv.config()
 
 
 const Input = ({name, label, register, required ,type,pattern,onChange, placeholder}) => (

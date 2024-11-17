@@ -73,14 +73,17 @@ const Card = () => {
               Are you an ideal candidate for Media Funding?
             </h5>
             <p className="mb-3 font-normal text-justify text-gray-700 dark:text-gray-400">
-              If you have any of the following, you may be a strong candidate for our Media Funding solution:
-              <ul className="list-disc ml-4">
+              If you have any of the following, you may be a strong candidate for our Media Funding solution:</p>
+              <span>
+              <ul className="list-disc ml-4 text-gray-700">
                 <li>A large reserve held by your merchant processor</li>
                 <li>A subscription-based model with a solid customer base</li>
                 <li>High-ticket products paid in installments</li>
                 <li>A site monetized heavily through Google ad revenue</li>
               </ul>
-            </p>
+              </span>
+              
+            
           </div>
         </div>
 

@@ -111,7 +111,7 @@ const Services = () => {
       <div className="text-center font-bold px-4 py-5 mt-7 mb-10 text-lg sm:text-2xl lg:text-3xl">
         <h1>
           Partner with Shadow Marketing LLC to leverage our media buying and
-          funding expertise—and watch your brand reach new heights.
+          funding expertise.
         </h1>
       </div>
     </>

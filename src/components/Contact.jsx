@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import { assets } from "../assets/assets";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
+// import 'react-toastify/dist/ReactToastify.css';
+// import { ToastContainer, toast } from 'react-toastify';
+import dotenv from "dotenv"
+dotenv.config()
 
 
 const Input = ({name, label, register, required ,type,pattern,onChange, placeholder}) => (
   <>
     <label htmlFor={name} 
      className="block text-[#E35F58] font-medium mt-3">{label}</label>
-    <input {...register(label, { required })}
+    <input {...register(name, { required })}
     id={name}
     type={type}
     pattern={pattern}
@@ -40,6 +44,13 @@ const Select = React.forwardRef(({ name,label, register }, ref) => (
 
 
 const Contact = () => {
+
+  // const notify = ()=>{
+  //   toast.success("Thanks for filling the form",{
+  //     theme : "colored"
+  //   });
+  // }
+
   const { register, handleSubmit,reset,formState: {errors} } = useForm();
 
   const [name,setName] = useState("");
@@ -50,15 +61,8 @@ const Contact = () => {
       reply_to : name,
     } 
     emailjs
-      .send("service_r5p4tf2", "template_wr4tjwc", Data, "b9CM8sKE3bayLtJ9E")
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      .send(process.env.emailService, process.env.templateName, Data, process.env.apiKey)
+      
     reset();
   };
 
@@ -81,10 +85,10 @@ const Contact = () => {
           <Input
                   name="reply_to"
                   label="First Name"
+                  
                   register={register}
-                  validation={{
-                    required: { value: true, message: "First Name is required" },
-                  }}
+                  
+                  required={{value: true, message : "field required"}}
                   type="text"
                   placeholder="Enter your first name"
                   onChange={(e)=>{
@@ -92,7 +96,7 @@ const Contact = () => {
                   }}
                 />
                 {errors.firstName && (
-                  <p className="text-red-500 text-sm">{errors.firstName.message}</p>
+                  <span className="text-red-500 text-sm">{errors.reply_to.message}</span>
                 )}
           </div>
 
@@ -101,9 +105,7 @@ const Contact = () => {
                   name="lastName"
                   label="Last Name"
                   register={register}
-                  validation={{
-                    required: { value: true, message: "Last Name is required" },
-                  }}
+                  required={{value: true, message : "field required"}}
                   type="text"
                   placeholder="Enter your last name"
                 />
@@ -119,13 +121,8 @@ const Contact = () => {
               name="email"
               label="Email"
               register={register}
-              validation={{
-                required: { value: true, message: "Email is required" },
-                pattern: {
-                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                  message: "Please enter a valid email address",
-                },
-              }}
+              required={{value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message : "field required"}}
+              pattern={{ value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Enter valid email id" }}
               type="email"
               onChange={(e)=>{
                 setEmail(e.target.value);
@@ -140,13 +137,9 @@ const Contact = () => {
               name="phone"
               label="Phone"
               register={register}
-              validation={{
-                required: { value: true, message: "Phone number is required" },
-                pattern: {
-                  value: /^[0-9]{10}$/,
-                  message: "Phone Number must be exactly 10 digits",
-                },
-              }}
+              required={{value: true, message : "field required"}}
+              pattern={{ value: /^[0-9]{10}$/, message: "Enter a valid 10-digit phone number" }}
+              
               type="tel"
               placeholder="Enter your 10-digit phone number"
             />
@@ -157,9 +150,7 @@ const Contact = () => {
               name="company"
               label="Company"
               register={register}
-              validation={{
-                required: { value: true, message: "Company is required" },
-              }}
+              required={{value: true, message : "field required"}}
               type="text"
               placeholder="Enter your company name"
             />
@@ -169,9 +160,7 @@ const Contact = () => {
               name="state"
               label="State"
               register={register}
-              validation={{
-                required: { value: true, message: "State is required" },
-              }}
+              required={{value: true, message : "field required"}}
               type="text"
               placeholder="(e.g., New York)"
             />
@@ -181,25 +170,26 @@ const Contact = () => {
               name="howCanWeHelp"
               label="How Can We Help?"
               register={register}
-              validation={{
-                required: { value: true, message: "This field is required" },
-              }}
+              required={{value: true, message : "field required"}}
               type="text"
               placeholder="Describe how we can assist you"
             />
             {errors.howCanWeHelp && <p className="text-red-500 text-sm">{errors.howCanWeHelp.message}</p>}
 
-            <Select label="How Did You Hear About Us?" register={register} validation={{
-                required: { value: true, message: "Please select an option" },
-              }} /> 
+            <Select label="How Did You Hear About Us?" register={register}
+            required={{value: true, message : "Please select an option"}}
+             /> 
 
             <p className=" font-bold text-[#E35F58] mt-6 text-[12px] sm:text-sm">We do not intend to collect or process personal information. Nevertheless, if you provide such information to us, you affirmatively consent to us collecting and processing it. </p>
 
             <input type="submit" 
+            
              className="mt-4 w-full bg-[#AB0505] text-white font-bold py-2 rounded-md hover:bg-[#E35F58] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" />
           </form>
+        
         </div>
       </div>
+      
     </>
   );
 };

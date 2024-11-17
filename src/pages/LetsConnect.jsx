@@ -25,7 +25,7 @@ const LetsConnect = () => {
 
       <div className="bg-gray-100 text-center  p-8 sm:p-6 md:p-8">
         <p className="text-xl sm:text-base md:text-lg italic text-gray-700 max-w-3xl mx-auto leading-relaxed sm:max-w-xl md:max-w-3xl font-sans">
-          Current customers with specific questions or looking to connect with your sales rep, email: <a href="Admin@shadowmarketingllc.com "className="text-blue-500 underline" >Admin@shadowmarketingllc.com</a>or call:<a href="tel:908-619-5122 " className="text-blue-500 underline">908-619-5122 .</a> Please provide us with the following details so that we can better
+          Current customers with specific questions or looking to connect with your sales rep, email: <a href="mailto:admin@shadowmarketingllc.com "className="text-blue-500 underline" >Admin@shadowmarketingllc.com</a>or call:<a href="tel:908-619-5122 " className="text-blue-500 underline">908-619-5122 .</a> Please provide us with the following details so that we can better
           assist you: contact name, business name, email, phone number, name of your sales rep, and your question.
         </p>
       </div>

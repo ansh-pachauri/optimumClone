@@ -19,7 +19,7 @@ const Footer2 = () => {
                   className="h-24 mb-4"
                   alt="Marketing Logo"
                 />
-                <span className="text-xl font-bold  flex items-start text-center md:text-left">
+                <span className="text-xl font-bold  flex items-start text-center md:text-left whitespace-nowrap">
                   Shadow Marketing LLC
                 </span>
               </Link>
@@ -52,9 +52,7 @@ const Footer2 = () => {
                   admin@shadowmarketingllc.com
                 </span>
 
-                {/* <span className="font-bold text-sm sm:text-base text-center sm:text-left ">
-                  admin@shadowmarketingllc.com
-                </span> */}
+               
               </a>
               <a
                 href="tel:908-619-5122"

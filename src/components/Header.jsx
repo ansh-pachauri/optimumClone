@@ -22,14 +22,14 @@ const Header = () => {
           />
         </div>
 
-        <div className="header2 hidden md:flex text-[#ffffff] text-[16px]">
+        <div className="header2 hidden md:flex text-[#ffffff]  text-[16px]">
         <Link to="/" className='ml-10 mr-10 hover:text-[#ffffffbd] font-bold text-xl '>Home</Link>
 
         <Link to="/product" className='mr-10 hover:text-[#ffffffbd] font-bold text-xl'>Product</Link>
 
         <Link to="/services" className='mr-10 hover:text-[#ffffffbd] font-bold text-xl'>Services</Link>
 
-        <Link to="/contact" className='mr-10 hover:text-[#ffffffbd] font-bold text-xl'>Contact Us</Link>
+        <Link to="/contact" className='mr-3 hover:text-[#ffffffbd] font-bold text-xl whitespace-nowrap '>Contact Us</Link>
 
           
           

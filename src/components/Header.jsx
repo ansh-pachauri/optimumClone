@@ -17,7 +17,7 @@ const Header = () => {
         <div className="header1 flex items-center">
           <img
             src={assets.clogo}
-            className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[290px] lg:h-[120px]"
+            className=" sm:w-[190px]  md:w-[210px] lg:w-[250px] h-[125px]"
             alt="Logo"
           />
         </div>
@@ -56,18 +56,18 @@ const Header = () => {
 
       {isMenuOpen && (
         <div className="hamburger-menu bg-[#AB0505] text-white text-center py-4 md:hidden">
-        <Link to="/" className='block py-2 hover:text-[#ffffffbd] font-semibold'>Home</Link>
+        <Link to="/" className='block py-2 hover:text-[#ffffffbd] font-semibold'onClick={toggleMenu}>Home</Link>
 
-        <Link to="/product" className='block py-2 hover:text-[#ffffffbd] font-semibold'>Products</Link>
+        <Link to="/product" className='block py-2 hover:text-[#ffffffbd] font-semibold' onClick={toggleMenu}>Products</Link>
 
-        <Link to="/services" className='block py-2 hover:text-[#ffffffbd] font-semibold'>Services</Link>
+        <Link to="/services" className='block py-2 hover:text-[#ffffffbd] font-semibold' onClick={toggleMenu}>Services</Link>
 
-        <Link to="/contact" className='block py-2 hover:text-[#ffffffbd] font-semibold'>ContactUs</Link>
+        <Link to="/contact" className='block py-2 hover:text-[#ffffffbd] font-semibold' onClick={toggleMenu}>ContactUs</Link>
 
           
 
           <div className="btn w-[150px] h-16 bg-[#D94C4C] rounded-[60px] flex items-center justify-center transition ease-linear delay-75 hover:bg-opacity-65 mt-4 mx-auto">
-          <Link to="/connect"className="text-[#ffffff] text-[15px] font-bold">Lets Connect</Link>
+          <Link to="/connect"className="text-[#ffffff] text-[15px] font-bold" onClick={toggleMenu}>Lets Connect</Link>
             
           </div>
         </div>

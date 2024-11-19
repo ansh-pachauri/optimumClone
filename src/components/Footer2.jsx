@@ -16,7 +16,7 @@ const Footer2 = () => {
               >
                 <img
                   src={assets.clogo}
-                  className="h-24 mb-4"
+                  className=" h-28 mb-4"
                   alt="Marketing Logo"
                 />
                 <span className="text-xl font-bold  flex items-start text-center md:text-left whitespace-nowrap">
@@ -26,34 +26,9 @@ const Footer2 = () => {
             </div>
 
             {/* Navigation Links */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-sm justify-between text-left md:text-left">
-              <Link to="#" className="hover:underline">
-                <h2 className="font-bold uppercase">Privacy Policy</h2>
-              </Link>
-              <Link to="#" className="hover:underline">
-                <h2 className="font-bold uppercase">Terms of Use</h2>
-              </Link>
-              <Link to="#" className="hover:underline">
-                <h2 className="font-bold uppercase">Advertising Guidelines</h2>
-              </Link>
-              <a
-                href="mailto:admin@shadowmarketingllc.com"
-                className="flex flex-col sm:flex-row items-center justify-center gap-2 hover:text-gray-300 break-words w-full sm:w-auto"
-              >
-                <svg
-                  className="w-6 h-6 sm:w-8 sm:h-8"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M3 4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H3zm18 2-9 5.99L3 6h18zM3 8.27l8.91 5.94c.34.22.79.22 1.13 0L21 8.27V18H3V8.27z" />
-                </svg>
-                <span className="truncate sm:text-left font-bold text-white  " title="admin@shadowmarketingllc.com">
-                  admin@shadowmarketingllc.com
-                </span>
-
-               
-              </a>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm justify-between text-center md:text-left">
+              
+             
               <a
                 href="tel:908-619-5122"
                 className="flex flex-col sm:flex-row items-center justify-center gap-2 hover:text-gray-300 break-words w-full sm:w-auto"
@@ -69,6 +44,25 @@ const Footer2 = () => {
                 <span className="font-bold text-sm sm:text-base text-center sm:text-left">
                   908-619-5122
                 </span>
+              </a>
+
+              <a
+                href="mailto:sheryl@shadowmarketingllc.com"
+                className="flex flex-col sm:flex-row items-center justify-center gap-2 hover:text-gray-300 break-words w-full sm:w-auto"
+              >
+                <svg
+                  className="w-6 h-6 sm:w-8 sm:h-8"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M3 4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H3zm18 2-9 5.99L3 6h18zM3 8.27l8.91 5.94c.34.22.79.22 1.13 0L21 8.27V18H3V8.27z" />
+                </svg>
+                <span className="truncate sm:text-center font-bold text-white  " title="admin@shadowmarketingllc.com">
+                sheryl@shadowmarketingllc.com
+                </span>
+
+               
               </a>
             </div>
           </div>

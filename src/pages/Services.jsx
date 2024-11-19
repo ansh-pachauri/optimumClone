@@ -8,7 +8,7 @@ const Services = () => {
       {/* Hero Section */}
       <div className="relative w-full h-[400px] sm:h-[300px] md:h-[400px]">
         <img
-          src={assets.service}
+          src={assets.servicepic}
           className="w-full h-full object-cover"
           alt="Services"
         />

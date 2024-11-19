@@ -50,7 +50,8 @@ const Contactus = () => {
                         </div>
                         <div className="phonenumberinfo flex flex-col items-center md:items-start">
                             <h2 className="text-[#2761f1] font-semibold text-xl md:text-2xl mb-4 md:mb-6">Phone Number</h2>
-                            <h5 className="text-lg md:text-xl">908-619-5122</h5>
+                            <a href='tel:908-619-5122' className="text-lg md:text-xl">908-619-5122</a>
+                            
                         </div>
                     </div>
 
@@ -60,7 +61,8 @@ const Contactus = () => {
                         </div>
                         <div className="emailinfo flex flex-col items-center md:items-start">
                             <h2 className="text-[#2761f1] font-semibold text-xl md:text-2xl mb-4 md:mb-6">Email Address</h2>
-                            <h5 className="text-lg md:text-xl">admin@shadowmarketingllc.com</h5>
+                            <a href='maltto:sheryl@shadowmarketingllc.com' className="text-lg md:text-xl">sheryl@shadowmarketingllc.com</a>
+                            
                         </div>
                     </div>
                 </div>

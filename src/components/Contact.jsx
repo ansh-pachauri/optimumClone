@@ -11,7 +11,7 @@ import emailjs from "emailjs-com";
 const Input = ({name, label, register, required ,type,pattern,onChange, placeholder}) => (
   <>
     <label htmlFor={name} 
-     className="block text-[#E35F58] font-medium mt-3">{label}</label>
+     className="block text-[#002865] font-medium mt-3">{label}</label>
     <input {...register(name, { required })}
     id={name}
     type={type}
@@ -25,7 +25,7 @@ const Input = ({name, label, register, required ,type,pattern,onChange, placehol
 
 const Select = React.forwardRef(({ name,label, register }, ref) => (
     <div className="mb-4 mt-3">
-      <label htmlFor={name} className="block text-[#E35F58] font-medium mb-1">{label}</label>
+      <label htmlFor={name} className="block text-[##002865] font-medium mb-1">{label}</label>
       <select
       id={name}
         {...register("How Did You Hear About Us?")}
@@ -72,7 +72,7 @@ const Contact = () => {
     <>
       <div className="flex flex-col items-center justify-between lg:flex-row  p-8 sm:p-8 bg-white space-y-4 lg:space-y-0">
         <div className="mb-8 lg:mb-0 lg:max-w-md xl:max-w-2xl">
-          <img src={assets.letaconnecticon} className="w-full max-w-2xl rounded-lg" />
+          <img src={assets.letsimage2} className="w-full max-w-2xl rounded-lg" />
         </div>
         {/* rightside form */}
         <div className="w-full lg:max-w-md xl:max-w-2xl bg-white  sm:p-8 max-w-2xl p-8 rounded-lg ">
@@ -88,7 +88,7 @@ const Contact = () => {
                   
                   register={register}
                   
-                  required={{value: true, message : "field required"}}
+                  required={{value: true, message : "Field required"}}
                   type="text"
                   placeholder="Enter your first name"
                   onChange={(e)=>{
@@ -105,7 +105,7 @@ const Contact = () => {
                   name="lastName"
                   label="Last Name"
                   register={register}
-                  required={{value: true, message : "field required"}}
+                  required={{value: true, message : "Field required"}}
                   type="text"
                   placeholder="Enter your last name"
                 />
@@ -115,16 +115,27 @@ const Contact = () => {
           </div>
             
           </div>
-            
-{/* EMAIL */}
+            {/* website */}
           <Input
+              name="website"
+              label="Your Website Name"
+              register={register}
+              required={{value: true, message : "Please Enter your Correct website Name"}}
+             
+              type="text"
+              
+              placeholder="(e.g, www.shadowmarkettingllc.com)"
+            />
+            {errors.website && <p className="text-red-500 text-sm">{errors.website.message}</p>}
+
+{/* EMAIL */}
+            <Input
               name="email"
               label="Email"
               register={register}
-              required={{value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message : "field required"}}
-              pattern={{ value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Enter valid email id" }}
+              required={{ value: true, message: "Email is required" }}
               type="email"
-              onChange={(e)=>{
+              onChange={(e) => {
                 setEmail(e.target.value);
               }}
               placeholder="Enter your email"
@@ -133,12 +144,13 @@ const Contact = () => {
 
 
 
+
             <Input
               name="phone"
               label="Phone"
               register={register}
-              required={{value: true, message : "field required"}}
-              pattern={{ value: /^[0-9]{10}$/, message: "Enter a valid 10-digit phone number" }}
+              required={{value: true, message : "Phone Number is required"}}
+              
               
               type="tel"
               placeholder="Enter your 10-digit phone number"
@@ -150,7 +162,7 @@ const Contact = () => {
               name="company"
               label="Company"
               register={register}
-              required={{value: true, message : "field required"}}
+              required={{value: true, message : "Field required"}}
               type="text"
               placeholder="Enter your company name"
             />
@@ -160,7 +172,7 @@ const Contact = () => {
               name="state"
               label="State"
               register={register}
-              required={{value: true, message : "field required"}}
+              required={{value: true, message : "Field required"}}
               type="text"
               placeholder="(e.g., New York)"
             />
@@ -170,7 +182,7 @@ const Contact = () => {
               name="howCanWeHelp"
               label="How Can We Help?"
               register={register}
-              required={{value: true, message : "field required"}}
+              required={{value: true, message : "Field required"}}
               type="text"
               placeholder="Describe how we can assist you"
             />
@@ -180,7 +192,7 @@ const Contact = () => {
             required={{value: true, message : "Please select an option"}}
              /> 
 
-            <p className=" font-bold text-[#E35F58] mt-6 text-[12px] sm:text-sm">We do not intend to collect or process personal information. Nevertheless, if you provide such information to us, you affirmatively consent to us collecting and processing it. </p>
+            <p className=" font-bold text-[#002865] mt-6 text-[12px] sm:text-sm">We do not intend to collect or process personal information. Nevertheless, if you provide such information to us, you affirmatively consent to us collecting and processing it. </p>
 
             <input type="submit" 
             

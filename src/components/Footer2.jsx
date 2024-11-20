@@ -5,7 +5,7 @@ import { assets } from "../assets/assets";
 const Footer2 = () => {
   return (
     <>
-      <footer className="bg-[#AB0505] text-white">
+      <footer className="bg-[#0f0d42] text-white">
         <div className="mx-auto w-full max-w-screen-xl px-12 item-center py-8 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-8 md:gap-0">
             {/* Logo and Company Name */}
@@ -15,7 +15,7 @@ const Footer2 = () => {
                 className="flex flex-col items-center md:items-start"
               >
                 <img
-                  src={assets.clogo}
+                  src={assets.shadowlogo1}
                   className=" h-28 mb-4"
                   alt="Marketing Logo"
                 />

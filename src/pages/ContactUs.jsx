@@ -9,7 +9,7 @@ const Contactus = () => {
         {/* image  */}
         <img src={assets.contact1} className="w-full  h-full object-cover " />
         <div className="absolute inset-0 flex items-center justify-center ">
-          <div className="bg-[#E35F58] bg-opacity-50 w-full flex justify-center items-start py-6 mt-72 px-4 ml-10 mr-10 lg:ml-20 lg:mr-20 sm:px-20 md:px-32">
+          <div className="bg-blue-900 bg-opacity-50 w-full flex justify-center items-start py-6 mt-72 px-4 ml-10 mr-10 lg:ml-20 lg:mr-20 sm:px-20 md:px-32">
             <h1 className="text-white text-4xl sm:text-3xl md:text-4xl  font-bold">
               Contact Us
             </h1>

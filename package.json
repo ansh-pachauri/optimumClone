@@ -10,11 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@elasticemail/elasticemail-client": "^4.0.23",
     "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
+    "@formspree/react": "^2.5.1",
     "@mui/material": "^6.1.6",
     "@react-email/components": "0.0.28",
+    "axios": "^1.7.7",
     "dotenv": "^16.4.5",
     "emailjs-com": "^3.2.0",
     "flowbite": "^2.5.2",

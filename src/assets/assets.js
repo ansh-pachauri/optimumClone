@@ -41,13 +41,15 @@ import contact from "./contact.jpg"
 import letaconnecticon from "./letsconnecticon.jpg"
 import contact1 from "./contact-min.jpg"
 import servicepic from "./servicepic.jpg"
+import shadowlogo1 from "./shadowlogo1.png"
+
 
 export const assets ={
     letimage,admarketing,banner,ottmarketing,product,socialmedia,videoadd,
     letsimage2,man,mediafund,nondilute,topfundimg,beyound,
     letimagedit,shadowlogo,typewrt,clogo,
     linkedln,contact,servicepic,
-    facebook,letaconnecticon,contact1,
+    facebook,letaconnecticon,contact1,shadowlogo1,
     instagram,
     logo,
     service,

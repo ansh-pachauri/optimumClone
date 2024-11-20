@@ -47,7 +47,7 @@ const Footer2 = () => {
               </a>
 
               <a
-                href="mailto:sheryl@shadowmarketingllc.com"
+                href="mailto:admin@shadowmarketingllc.com"
                 className="flex flex-col sm:flex-row items-center justify-center gap-2 hover:text-gray-300 break-words w-full sm:w-auto"
               >
                 <svg
@@ -59,7 +59,7 @@ const Footer2 = () => {
                   <path d="M3 4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H3zm18 2-9 5.99L3 6h18zM3 8.27l8.91 5.94c.34.22.79.22 1.13 0L21 8.27V18H3V8.27z" />
                 </svg>
                 <span className="truncate sm:text-center font-bold text-white  " title="admin@shadowmarketingllc.com">
-                sheryl@shadowmarketingllc.com
+                admin@shadowmarketingllc.com
                 </span>
 
                

@@ -61,7 +61,7 @@ const Contactus = () => {
                         </div>
                         <div className="emailinfo flex flex-col items-center md:items-start">
                             <h2 className="text-[#2761f1] font-semibold text-xl md:text-2xl mb-4 md:mb-6">Email Address</h2>
-                            <a href='maltto:sheryl@shadowmarketingllc.com' className="text-lg md:text-xl">sheryl@shadowmarketingllc.com</a>
+                            <a href='maltto:admin@shadowmarketingllc.com' className="text-lg md:text-xl">admin@shadowmarketingllc.com</a>
                             
                         </div>
                     </div>

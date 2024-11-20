@@ -375,7 +375,7 @@ const Contact = () => {
             {/* website */}
             <Input
               name="website"
-              label="Your Website Name"
+              label="Your Website "
               register={register}
               required={{ value: true, message: "Please Enter your Correct website Name" }}
               type="text"

@@ -17,7 +17,7 @@ const Header = () => {
         <div className="header1 flex items-center">
           <img
             src={assets.shadowlogo1}
-            className=" sm:w-[180px]  md:w-[210px] lg:w-[280px] h-[125px]"
+            className=" sm:w-[170px]  md:w-[200px] lg:w-[280px] h-[125px]"
             alt="Logo"
           />
         </div>

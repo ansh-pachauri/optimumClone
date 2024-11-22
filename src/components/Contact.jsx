@@ -1,12 +1,9 @@
 
-
-// import dotenv from "dotenv"
-// dotenv.config();
-
 import React from "react";
 import { assets } from "../assets/assets";
 import { useForm } from "react-hook-form";
-// import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Input = ({ name, label, onChange, required, register, type, placeholder }) => (
   <>
@@ -52,7 +49,10 @@ const Contact = () => {
   // Form submission handler
   const onSubmit = async (data) => {
     try {
-      const response = await fetch(import.meta.env.FORMSPREE_URL, {
+      const companyUrl = import.meta.env.VITE_FORMSPREE_URL
+      
+      
+      const response = await fetch(companyUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -61,15 +61,16 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        alert("Your message has been sent successfully!");
+        toast.success("Thank you for reaching out to us. We will get back to you shortly.")
         reset();
       } else {
-        alert("Failed to send the message. Please try again later.");
+        toast.error("Please try again")
       }
     } catch (error) {
       console.error("Error sending form:", error);
-      alert("An error occurred. Please try again later.");
+      toast.error("API not working Please try again")
     }
+  
   };
 
   return (
@@ -80,6 +81,8 @@ const Contact = () => {
         </div>
         {/* rightside form */}
         <div className="w-full lg:max-w-md xl:max-w-2xl bg-white sm:p-8 max-w-2xl p-8 rounded-lg">
+        <ToastContainer position="top-right" autoClose={6000} transition: Bounce
+         />
           <form onSubmit={handleSubmit(onSubmit)}>
             {/* first name and last name */}
             <div className="flex flex-row sm:flex-col justify-between gap-3">
@@ -195,3 +198,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
